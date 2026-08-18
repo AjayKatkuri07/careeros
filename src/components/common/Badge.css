@@ -1,0 +1,37 @@
+.badge {
+  display: inline-block;
+  font-size: var(--font-xs);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.badge-easy {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-medium {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.badge-hard {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.badge-solved {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-attempted {
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
+}
+
+.badge-revisit {
+  background-color: #fef3c7;
+  color: #b45309;
+}

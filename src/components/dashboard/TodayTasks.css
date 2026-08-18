@@ -1,0 +1,32 @@
+.today-tasks h2 {
+  font-size: var(--font-md);
+  margin-bottom: var(--space-md);
+}
+
+.today-tasks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.today-task-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+}
+
+.today-task-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.task-text {
+  font-size: var(--font-sm);
+}
+
+.task-text-done {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}

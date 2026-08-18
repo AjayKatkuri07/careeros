@@ -1,0 +1,21 @@
+.learning-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.learning-header h1 {
+  font-size: var(--font-xl);
+  margin-bottom: 4px;
+}
+
+.learning-role {
+  color: var(--color-text-muted);
+  font-size: var(--font-sm);
+}
+
+.learning-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}

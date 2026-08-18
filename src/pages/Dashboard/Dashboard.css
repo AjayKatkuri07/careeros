@@ -1,0 +1,17 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.dashboard-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .dashboard-bottom-row {
+    grid-template-columns: 1fr;
+  }
+}

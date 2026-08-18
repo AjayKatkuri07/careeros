@@ -1,0 +1,32 @@
+.applications-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.applications-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.applications-page-header h1 {
+  font-size: var(--font-xl);
+}
+
+.applications-add-button {
+  width: auto;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .applications-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .applications-add-button {
+    width: 100%;
+  }
+}

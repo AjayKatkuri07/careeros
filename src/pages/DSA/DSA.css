@@ -1,0 +1,47 @@
+.dsa-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.dsa-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dsa-page-header h1 {
+  font-size: var(--font-xl);
+}
+
+.dsa-add-button {
+  width: auto;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.dsa-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.dsa-toolbar select {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-sm);
+}
+
+@media (max-width: 768px) {
+  .dsa-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .dsa-add-button {
+    width: 100%;
+  }
+}

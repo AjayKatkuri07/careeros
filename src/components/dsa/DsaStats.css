@@ -1,0 +1,17 @@
+.dsa-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.dsa-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (max-width: 480px) {
+  .dsa-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,30 @@
+.upcoming-interview h2 {
+  font-size: var(--font-md);
+  margin-bottom: var(--space-md);
+}
+
+.upcoming-interview-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.upcoming-interview-company {
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+
+.upcoming-interview-role {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
+.upcoming-interview-round {
+  font-size: var(--font-sm);
+}
+
+.upcoming-interview-datetime {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}

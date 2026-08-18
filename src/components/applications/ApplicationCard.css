@@ -1,0 +1,51 @@
+.application-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.application-card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-card-company {
+  font-weight: 600;
+  font-size: var(--font-sm);
+}
+
+.application-card-role {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.application-card-location,
+.application-card-date {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.application-card-link {
+  font-size: var(--font-xs);
+  color: var(--color-primary);
+}
+
+.application-card-status {
+  margin-top: var(--space-xs);
+  padding: 4px var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-xs);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.application-card-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 4px;
+}

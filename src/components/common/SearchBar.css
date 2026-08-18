@@ -1,0 +1,14 @@
+.search-bar {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-sm);
+  min-width: 200px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
