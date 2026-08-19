@@ -1,0 +1,51 @@
+.interview-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.interview-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.interview-card-company {
+  display: block;
+  font-weight: 600;
+  font-size: var(--font-sm);
+}
+
+.interview-card-role {
+  display: block;
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.interview-card-datetime {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.interview-card-round {
+  font-size: var(--font-xs);
+  color: var(--color-primary);
+}
+
+.interview-card-notes {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
+.interview-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: 4px;
+}
