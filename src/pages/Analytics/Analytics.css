@@ -1,0 +1,9 @@
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.analytics-page h1 {
+  font-size: var(--font-xl);
+}

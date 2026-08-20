@@ -1,0 +1,42 @@
+.bar-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.bar-breakdown-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 32px;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.bar-breakdown-label {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
+.bar-breakdown-track {
+  height: 10px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.bar-breakdown-fill {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  transition: width 0.3s ease;
+}
+
+.bar-breakdown-value {
+  font-size: var(--font-sm);
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .bar-breakdown-row {
+    grid-template-columns: 80px 1fr 28px;
+  }
+}
