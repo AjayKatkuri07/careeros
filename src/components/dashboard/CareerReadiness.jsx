@@ -1,23 +1,25 @@
-import { useMemo } from "react";
-import { calculateCareerScore } from "../../utils/careerScore.js";
+import { useCareerScore } from "../../hooks/useCareerScore.js";
 import ProgressBar from "../common/ProgressBar.jsx";
+import RadialScore from "./RadialScore.jsx";
 import "./CareerReadiness.css";
 
 function CareerReadiness() {
-  const score = useMemo(() => calculateCareerScore(), []);
-  const { overall, breakdown, labels, strongAreas, needsAttention } = score;
+  const { overall, breakdown, labels, strongAreas, needsAttention } = useCareerScore();
 
   return (
     <section className="card career-readiness">
       <div className="career-readiness-header">
         <h2>Career Readiness</h2>
-        <span className="career-readiness-score">{overall} / 100</span>
       </div>
 
-      <div className="career-readiness-breakdown">
-        {Object.keys(breakdown).map((key) => (
-          <ProgressBar key={key} label={labels[key]} value={breakdown[key]} />
-        ))}
+      <div className="career-readiness-top">
+        <RadialScore score={overall} />
+
+        <div className="career-readiness-breakdown">
+          {Object.keys(breakdown).map((key) => (
+            <ProgressBar key={key} label={labels[key]} value={breakdown[key]} />
+          ))}
+        </div>
       </div>
 
       <div className="career-readiness-notes">

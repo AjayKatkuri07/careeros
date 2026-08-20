@@ -1,5 +1,6 @@
 import WelcomeSection from "../../components/dashboard/WelcomeSection.jsx";
 import CareerReadiness from "../../components/dashboard/CareerReadiness.jsx";
+import CareerRecommendations from "../../components/dashboard/CareerRecommendations.jsx";
 import StatsGrid from "../../components/dashboard/StatsGrid.jsx";
 import TodayTasks from "../../components/dashboard/TodayTasks.jsx";
 import UpcomingInterview from "../../components/dashboard/UpcomingInterview.jsx";
@@ -11,6 +12,7 @@ function Dashboard() {
       <WelcomeSection />
       <StatsGrid />
       <CareerReadiness />
+      <CareerRecommendations />
 
       <div className="dashboard-bottom-row">
         <TodayTasks />

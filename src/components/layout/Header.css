@@ -46,3 +46,8 @@
   font-size: var(--font-xs);
   font-weight: 600;
 }
+@media (max-width: 480px) {
+  .app-header-brand {
+    display: none;
+  }
+}

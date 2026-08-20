@@ -32,8 +32,9 @@
   background-color: var(--color-surface);
   color: var(--color-text);
   font-size: var(--font-sm);
+  min-width: 140px;
+  flex: 1;
 }
-
 @media (max-width: 768px) {
   .dsa-page-header {
     flex-direction: column;

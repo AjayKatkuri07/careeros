@@ -113,3 +113,15 @@ input, select, textarea {
   justify-content: flex-end;
   gap: var(--space-sm);
 }
+/* Prevent any accidental page-level horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Long text (company names, project names, etc.) wraps instead of overflowing */
+h1, h2, h3, .stat-value,
+.application-card-company, .project-card-name, .interview-card-company {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
