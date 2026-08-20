@@ -1,0 +1,1 @@
+export const PROJECT_STATUSES = ["Planning", "Development", "Testing", "Completed"];

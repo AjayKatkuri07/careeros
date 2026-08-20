@@ -1,0 +1,75 @@
+.project-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.project-card-name {
+  font-weight: 600;
+  font-size: var(--font-sm);
+}
+
+.project-card-description {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.project-card-tag {
+  font-size: var(--font-xs);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
+}
+
+.project-card-progress-track {
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.project-card-progress-fill {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.project-card-progress-label {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+.project-card-links {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: 4px;
+}
+
+.project-card-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 4px;
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--color-border);
+}
