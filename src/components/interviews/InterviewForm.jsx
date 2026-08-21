@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getDefaultChecklist } from "../../data/interviewChecklistTemplate.js";
+import { getDefaultChecklist } from "../../data/interviewChecklist.js";
 import "./InterviewForm.css";
 
 const EMPTY_INTERVIEW = {
