@@ -10,6 +10,11 @@ export function getItem(key) {
     return null;
   }
 }
+const PROGRESS_KEYS = ["learning", "dsa", "applications", "interviews", "projects", "tasks"];
+
+export function clearProgressData() {
+  PROGRESS_KEYS.forEach((key) => removeItem(key));
+}
 
 export function setItem(key, value) {
   localStorage.setItem(PREFIX + key, JSON.stringify(value));

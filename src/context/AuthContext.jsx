@@ -53,12 +53,22 @@ export function AuthProvider({ children }) {
     setUser(null);
   }
 
-  const value = {
+      function updateUser(changes) {
+    setUser((prev) => ({ ...prev, ...changes }));
+
+    const registeredUsers = getItem("registeredUsers") || [];
+    const updatedRegisteredUsers = registeredUsers.map((u) =>
+      u.email === user.email ? { ...u, ...changes } : u
+    );
+    setItem("registeredUsers", updatedRegisteredUsers);
+  }
+   const value = {
     user,
     isAuthenticated: !!user,
     login,
     register,
     logout,
+    updateUser,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

@@ -2,14 +2,8 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext.jsx";
 import "./Register.css";
+import { TARGET_ROLES } from "../../data/targetRoles.js";
 
-const TARGET_ROLES = [
-  "Frontend Developer",
-  "Backend Developer",
-  "Java Full Stack Developer",
-  "Software Developer",
-  "Data Analyst",
-];
 
 function Register() {
   const { register } = useAuth();
